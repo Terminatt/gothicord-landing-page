@@ -1,0 +1,42 @@
+.header {
+  background-color: $black;
+  padding: 0.5rem 2rem 0.5rem 7rem;
+  box-shadow: $box-shadow-regular;
+  display: flex;
+
+  &__brand-container {
+    width: 50%;
+    @include center-vert;
+  }
+
+  &__brand {
+    font-size: $font-size-headings;
+    font-weight: 500;
+  }
+
+  &__nav {
+    font-size: $font-size-small;
+    width: 50%;
+    @include center-vert;
+    justify-content: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $text-primary;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    padding-bottom: 0.3rem;
+    padding-right: 0.1rem;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: $margin-small;
+  }
+
+  &__link--active {
+    border-bottom: $border-bottom-regular;
+  }
+}

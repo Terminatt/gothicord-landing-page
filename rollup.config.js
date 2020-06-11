@@ -20,7 +20,7 @@ export default {
 		scss({
 			output: true,
 			output: 'public/bundle.css',
-			watch: 'src/styles',
+			watch: ['src/styles', 'src/styles/components', 'src/styles/utils']
 		}),
 	]
 };
