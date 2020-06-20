@@ -1,0 +1,20 @@
+.inp-container {
+  @include center-vert;
+  flex-wrap: wrap;
+
+  &__label {
+    display: block;
+    font-size: $font-size-text;
+    font-weight: $font-weight-small;
+    margin-bottom: $margin-tiny;
+    letter-spacing: $letter-spacing-small;
+    width: 100%;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 3px;
+    height: 2.5rem;
+    padding: 0 $padding-tiny 0 $padding-tiny;
+  }
+}

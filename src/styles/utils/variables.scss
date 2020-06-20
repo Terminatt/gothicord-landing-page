@@ -9,6 +9,11 @@ $text-primary: #ECECEC;
 
 // text decorations
 $font-weight-medium: 600;
+$font-weight-small: 500;
+$font-weight-tiny: 400;
+
+$letter-spacing-small: 0.4rem;
+
 
 // text font sizes
 $font-size-headings-large: 4rem;
@@ -26,11 +31,13 @@ $border-bottom-regular: 2px solid $secondary;
 // margins
 $margin-tiny: 1rem;
 $margin-small: 2rem;
+$margin-between: 3.5rem;
 $margin-medium: 5rem;
 $margin-high: 7rem;
 
 // paddings
 $padding-tiny: 1rem;
 $padding-small: 2rem;
+$padding-between: 3.5rem;
 $padding-medium: 5rem;
 $padding-high: 7rem;

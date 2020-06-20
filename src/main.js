@@ -6,3 +6,9 @@ import './styles/global.scss'
 
   // components
   import "./styles/components/header.scss";
+  import "./styles/components/input.scss";
+  import "./styles/components/button.scss";
+    
+  // sections
+  import "./styles/sections/main.scss";
+  import "./styles/sections/registration.scss";

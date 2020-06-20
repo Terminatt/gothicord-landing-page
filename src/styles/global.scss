@@ -2,18 +2,22 @@
 @import "./utils//mixins.scss";
 @import "./utils/variables.scss";
 
-// components
-@import "./components/header.scss";
 
 // global
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -22,4 +26,9 @@ body {
   font-size: 62.5%;
   background-color: $background;
   color: $text-primary;
+}
+
+.main {
+  display: grid;
+  height: 100%;
 }

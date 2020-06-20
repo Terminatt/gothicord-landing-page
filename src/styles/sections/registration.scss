@@ -1,0 +1,29 @@
+.registration {
+  display: flex;
+  font-size: $font-size-text;
+  letter-spacing: $letter-spacing-small;
+
+  &__text {
+    width: 50%;
+
+  }
+
+  &__image {
+    width: 50%;
+  }
+
+  &__heading {
+    font-size: $font-size-headings-large;
+    font-weight: $font-weight-tiny;
+    color: $secondary;
+  }
+
+  &__description {
+    font-weight: $font-weight-small;
+    line-height: 3.5rem;
+  }
+  &__input {
+    margin-right: $margin-between;
+    width: 50%;
+  }
+}
