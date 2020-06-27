@@ -4,17 +4,79 @@
 
   &__label {
     display: block;
-    font-size: $font-size-text;
+    font-size: $font-size-small;
     font-weight: $font-weight-small;
     margin-bottom: $margin-tiny;
     letter-spacing: $letter-spacing-small;
     width: 100%;
   }
 
+  &__focus {
+    position: relative;
+    padding-right: $padding-tiny;
+  }
+
   &__input {
     border: none;
-    border-radius: 3px;
     height: 2.5rem;
-    padding: 0 $padding-tiny 0 $padding-tiny;
+    border-radius: 3px;
+    width: 100%;
+    padding: 0 0 0 $padding-tiny;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // TODO make effect rounded and get rid of the small visible dots
+  &__input:focus~&__focus-border:before,
+  &__input:focus~&__focus-border:after {
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  &__input:focus~&__focus-border i:before,
+  &__input:focus~&__focus-border i:after {
+    top: 0;
+    height: 100%;
+    transition: 0.6s;
+  }
+
+  &__focus-border {
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $secondary-hover;
+      transition: 0.4s;
+    }
+
+    &:after {
+      top: auto;
+      bottom: 0;
+    }
+
+    & i:before,
+    & i:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2px;
+      height: 0;
+      background-color: $secondary-hover;
+      transition: 0.6s;
+    }
+
+    & i:after {
+      left: auto;
+      right: 0;
+    }
   }
 }

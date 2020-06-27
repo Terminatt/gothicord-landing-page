@@ -4,5 +4,19 @@
   color: $text-primary;
   font-size: $font-size-small;
   border-radius: 3px;
-  padding: 0.3rem $padding-small 0.3rem $padding-small;
+  padding: 0.5rem $padding-small 0.3rem $padding-small;
+  transition: background-color 0.2s;
+  cursor: pointer;
+
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $secondary-hover;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
 }
