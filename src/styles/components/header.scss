@@ -1,6 +1,5 @@
 .header {
   background-color: $black;
-  padding: 0.5rem 2rem 0.5rem 7rem;
   box-shadow: $box-shadow-regular;
   display: flex;
 
@@ -10,12 +9,10 @@
   }
 
   &__brand {
-    font-size: $font-size-headings;
     font-weight: $font-weight-small;
   }
 
   &__nav {
-    font-size: $font-size-small;
     width: 50%;
     @include center-vert;
     justify-content: flex-end;
@@ -28,15 +25,60 @@
 
   &__link {
     font-weight: $font-weight-small;
-    padding-bottom: 0.3rem;
-    padding-right: 0.1rem;
-  }
-
-  &__link:not(:last-child) {
-    margin-right: $margin-small;
   }
 
   &__link--active {
     border-bottom: $border-bottom-regular;
   }
+}
+
+@include bp(xs) {
+  .header {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+    &__brand {
+      font-size: $font-size-text-medium;
+    }
+
+    &__nav {
+      font-size: $font-size-small;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__link:not(:last-child) {
+      margin-right: $margin-tiny;
+    }
+  }
+}
+
+@include bp(xxl) {
+  .header {
+    padding: 0.5rem 2rem 0.5rem 7rem;
+
+    &__brand-container {
+      width: 50%;
+    }
+
+    &__brand {
+      font-size: $font-size-headings;
+    }
+
+    &__nav {
+      font-size: $font-size-small;
+    }
+
+    &__link {
+      display: inline;
+      padding-bottom: 0.3rem;
+      padding-right: 0.1rem;
+    }
+
+    &__link:not(:last-child) {
+      margin-right: $margin-small;
+    }
+  }
+
 }
