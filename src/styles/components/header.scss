@@ -44,6 +44,10 @@
       font-size: $font-size-small;
     }
 
+    &__bars {
+      display: inline;
+    }
+
     &__link {
       display: none;
     }
@@ -68,6 +72,10 @@
 
     &__nav {
       font-size: $font-size-small;
+    }
+
+    &__bars {
+      display: none;
     }
 
     &__link {
