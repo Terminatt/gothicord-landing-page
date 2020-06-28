@@ -13,3 +13,6 @@ import './styles/global.scss'
   // sections
   import "./styles/sections/main.scss";
   import "./styles/sections/registration.scss";
+  
+// jQuery
+import $ from "jquery";

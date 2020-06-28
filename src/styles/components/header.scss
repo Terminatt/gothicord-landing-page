@@ -44,10 +44,6 @@
       font-size: $font-size-small;
     }
 
-    &__bars {
-      display: inline;
-    }
-
     &__link {
       display: none;
     }
@@ -75,7 +71,7 @@
     }
 
     &__bars {
-      display: none;
+      display: none !important;
     }
 
     &__link {
