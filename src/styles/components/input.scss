@@ -19,7 +19,6 @@
   &__input {
     border: none;
     height: 2.5rem;
-    border-radius: 3px;
     width: 100%;
     padding: 0 0 0 $padding-tiny;
 
@@ -28,7 +27,6 @@
     }
   }
 
-  // TODO make effect rounded and get rid of the small visible dots
   &__input:focus~&__focus-border:before,
   &__input:focus~&__focus-border:after {
     left: 0;
@@ -41,6 +39,7 @@
     top: 0;
     height: 100%;
     transition: 0.6s;
+    width: 2px;
   }
 
   &__focus-border {
@@ -68,7 +67,7 @@
       position: absolute;
       top: 50%;
       left: 0;
-      width: 2px;
+      width: 0;
       height: 0;
       background-color: $secondary-hover;
       transition: 0.6s;
