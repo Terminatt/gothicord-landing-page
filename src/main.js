@@ -26,5 +26,9 @@ import $ from "jquery";
 
 
 $(document).ready(function () {
-  attachHamburgerHandler();
+  attachHamburgerHandler(expandNavMobileMenu);
 })
+
+function expandNavMobileMenu() {
+  $(".header__nav").toggleClass("header__nav--mobile-active");
+} 

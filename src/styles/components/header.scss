@@ -2,6 +2,7 @@
   background-color: $black;
   box-shadow: $box-shadow-regular;
   display: flex;
+  flex-wrap: wrap;
 
   &__brand-container {
     width: 50%;
@@ -12,6 +13,7 @@
     font-weight: $font-weight-small;
   }
 
+  &__hamburger-container,
   &__nav {
     width: 50%;
     @include center-vert;
@@ -23,12 +25,28 @@
     }
   }
 
+  &__nav--mobile-active {
+    margin-top: $margin-small;
+    display: block !important;
+    width: 100%;
+  }
+
+  &__nav--mobile-active>&__link {
+    display: block;
+    width: 100%;
+    padding-bottom: $padding-tiny;
+  }
+
+  &__nav--mobile-active>&__link:not(:first-child) {
+    margin-top: $margin-tiny;
+  }
+
   &__link {
     font-weight: $font-weight-small;
   }
 
   &__link--active {
-    border-bottom: $border-bottom-regular;
+    border-bottom: $border-regular;
   }
 }
 
@@ -42,9 +60,6 @@
 
     &__nav {
       font-size: $font-size-small;
-    }
-
-    &__link {
       display: none;
     }
 
@@ -66,17 +81,17 @@
       font-size: $font-size-headings;
     }
 
-
-    &__nav {
-      font-size: $font-size-small;
-    }
-
-    &__hamburger {
+    &__hamburger-container {
       display: none !important;
     }
 
+    &__nav {
+      font-size: $font-size-small;
+      display: flex;
+    }
+
+
     &__link {
-      display: inline;
       padding-bottom: 0.3rem;
       padding-right: 0.1rem;
     }
