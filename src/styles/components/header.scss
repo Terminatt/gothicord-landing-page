@@ -55,13 +55,14 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
 
     &__brand {
-      font-size: $font-size-text-medium;
+      font-size: $font-size-text;
     }
 
     &__nav {
       font-size: $font-size-small;
       display: none;
     }
+
 
     &__link:not(:last-child) {
       margin-right: $margin-tiny;
