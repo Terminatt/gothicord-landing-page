@@ -19,7 +19,7 @@ import './styles/global.scss'
 import $ from "jquery";
 
 $(".hamburger").on("click", function () {
-  $(".hamburger-upper").toggleClass("hamburger__line--active-upper");
-  $(".hamburger-lower").toggleClass("hamburger__line--active-lower");
-  $(".hamburger-last").toggleClass("hamburger__line--hidden")
+  $(this).find(".hamburger-upper").toggleClass("hamburger__line--active-upper");
+  $(this).find(".hamburger-lower").toggleClass("hamburger__line--active-lower");
+  $(this).find(".hamburger-last").toggleClass("hamburger__line--hidden");
 })
