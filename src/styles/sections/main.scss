@@ -3,7 +3,7 @@
   margin-top: $margin-medium;
 }
 
-@include bp(xxl) {
+@include bp(xl) {
   .main {
     padding-left: 22rem;
     padding-right: 22rem;

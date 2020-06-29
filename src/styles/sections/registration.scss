@@ -22,8 +22,91 @@
     font-weight: $font-weight-small;
     line-height: 3.5rem;
   }
-  &__input {
-    margin-right: $margin-between;
-    width: 50%;
+}
+
+@include bp(xs) {
+  .registration {
+    padding: 0 $padding-tiny;
+    flex-wrap: wrap;
+
+    &__text {
+      width: 100%;
+      order: 2;
+    }
+
+    &__heading {
+      font-size: $font-size-headings;
+      text-align: center;
+    }
+
+    &__description {
+      line-height: 3rem;
+      text-align: center;
+    }
+
+    &__image {
+      width: 100%;
+      order: 1;
+    }
+
+    &__action>.inp-container {
+      justify-content: center;
+    }
+
+    &__action>.inp-container>.btn {
+      margin-top: $margin-small;
+    }
+
+    &__action {
+      padding: 0 $padding-tiny;
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
+}
+
+@include bp(xl) {
+  .registration {
+    padding: 0;
+    flex-wrap: nowrap;
+
+    &__text {
+      width: 50%;
+      order: 1;
+    }
+
+    &__heading {
+      font-size: $font-size-headings-large;
+      text-align: left;
+    }
+
+    &__description {
+      line-height: 3.5rem;
+      text-align: left;
+    }
+
+    &__image {
+      width: 50%;
+      order: 2;
+    }
+
+    &__action {
+      padding: 0;
+    }
+
+    &__action>.inp-container {
+      justify-content: flex-start;
+    }
+
+    &__action>.inp-container>.btn {
+      margin: 0;
+    }
+
+    &__input {
+      margin-right: $margin-between;
+      width: 50%;
+    }
   }
 }

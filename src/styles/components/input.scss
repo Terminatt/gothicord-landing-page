@@ -79,3 +79,20 @@
     }
   }
 }
+
+@include bp(xs) {
+  .inp-container {
+    &__label {
+      font-size: $font-size-mobile;
+    }
+  }
+}
+
+
+@include bp(xl) {
+  .inp-container {
+    &__label {
+      font-size: $font-size-small;
+    }
+  }
+}
