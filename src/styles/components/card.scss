@@ -1,0 +1,24 @@
+.card {
+  width: 25rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: $box-shadow-card;
+
+  &__heading-container {
+    padding: $padding-small 0;
+
+    border-bottom: $border-white;
+  }
+
+  &__heading {
+    font-size: $font-size-headings;
+    font-weight: $font-weight-medium;
+  }
+
+  &__content {
+    padding: $padding-tiny;
+    font-size: $font-size-small;
+    line-height: 2rem;
+    font-weight: $font-weight-small;
+  }
+}

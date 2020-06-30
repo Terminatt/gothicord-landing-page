@@ -12,6 +12,7 @@ import "./styles/components/input.scss";
 import "./styles/components/button.scss";
 import "./styles/components/hamburger.scss";
 import "./styles/components/divider.scss";
+import "./styles/components/card.scss";
 
 // javascript components
 import { attachHamburgerHandler } from './components/hamburger';
@@ -19,6 +20,7 @@ import { attachHamburgerHandler } from './components/hamburger';
 // sections
 import "./styles/sections/main.scss";
 import "./styles/sections/registration.scss";
+import "./styles/sections/cards.scss";
   
 // jQuery
 import $ from "jquery";
