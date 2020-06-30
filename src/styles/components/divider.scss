@@ -1,13 +1,8 @@
 .divider {
   width: max-content;
 
-  &__text-container {
-    margin-left: $margin-medium;
-  }
-
   &__text {
-    font-size: $font-size-headings;
-    font-weight: $font-weight-small;
+    font-weight: $font-weight-tiny;
   }
 
   &__block {
@@ -15,5 +10,29 @@
     background-color: $secondary;
     height: 1.6rem;
     width: 100%;
+  }
+}
+
+@include bp(xs) {
+  .divider {
+    &__text {
+      font-size: $font-size-text;
+    }
+
+    &__text-container {
+      margin-left: $margin-small;
+    }
+  }
+}
+
+@include bp(xl) {
+  .divider {
+    &__text {
+      font-size: $font-size-headings;
+    }
+
+    &__text-container {
+      margin-left: $margin-medium;
+    }
   }
 }
