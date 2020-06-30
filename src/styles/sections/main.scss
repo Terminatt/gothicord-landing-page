@@ -3,9 +3,20 @@
   margin-top: $margin-medium;
 }
 
-@include bp(xl) {
+@include bp(lg) {
   .main {
-    padding-left: 22rem;
-    padding-right: 22rem;
+    padding: 0 4rem;
+  }
+}
+
+@include bp(xxl) {
+  .main {
+    padding: 0 15rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .main {
+    padding: 0 20rem;
   }
 }
