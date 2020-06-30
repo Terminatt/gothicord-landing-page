@@ -1,0 +1,19 @@
+.divider {
+  width: max-content;
+
+  &__text-container {
+    margin-left: $margin-medium;
+  }
+
+  &__text {
+    font-size: $font-size-headings;
+    font-weight: $font-weight-small;
+  }
+
+  &__block {
+    margin-top: $margin-tiny;
+    background-color: $secondary;
+    height: 1.6rem;
+    width: 100%;
+  }
+}

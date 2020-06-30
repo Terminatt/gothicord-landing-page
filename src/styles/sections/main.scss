@@ -1,22 +1,26 @@
 .main {
-  display: flex;
+  &__divider {
+    margin-top: 12rem;
+  }
+}
+.section {
   margin-top: $margin-medium;
 }
 
 @include bp(lg) {
-  .main {
+  .section {
     padding: 0 4rem;
   }
 }
 
 @include bp(xxl) {
-  .main {
+  .section {
     padding: 0 15rem;
   }
 }
 
 @media only screen and (min-width: 1800px) {
-  .main {
+  .section {
     padding: 0 20rem;
   }
 }

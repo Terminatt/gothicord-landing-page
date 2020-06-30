@@ -11,6 +11,7 @@ import "./styles/components/header.scss";
 import "./styles/components/input.scss";
 import "./styles/components/button.scss";
 import "./styles/components/hamburger.scss";
+import "./styles/components/divider.scss";
 
 // javascript components
 import { attachHamburgerHandler } from './components/hamburger';
