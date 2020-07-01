@@ -1,10 +1,5 @@
 .section-cards {
   margin-top: $margin-high;
-  padding: 0 $padding-high;
-  height: 1000px;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding: $padding-high 0 !important;
 }
