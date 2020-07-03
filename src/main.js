@@ -34,11 +34,13 @@ import Swiper from 'swiper';
 $(document).ready(function () {
   const mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
-    loop: true,
-    spaceBetween: 100,
     grabCursor: true,
-    slidesPerView: 3,
+    slidesPerView: "auto",
     centeredSlides: true,
+    simulateTouch: true,
+    slideToClickedSlide: true,
+    loop: true,
+    loopedSlides: 3,
     pagination: {
       el: '.swiper-pagination',
     },
@@ -46,6 +48,16 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+      320: {
+        slidesPerView: "auto"
+      },
+      768: {
+        slidesPerView: 2,
+      }
+    }
+
   })
   attachHamburgerHandler(expandNavMobileMenu);
 

@@ -1,5 +1,25 @@
 .section-cards {
-  margin-top: $margin-high;
   width: 100%;
   padding: $padding-high 0 !important;
+}
+
+// swiper buttons
+.swiper-pagination-bullet {
+  background-color: $text-primary !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $secondary !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $secondary !important;
+}
+
+@include bp(md) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }

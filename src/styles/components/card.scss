@@ -24,6 +24,8 @@
   }
 }
 
-.swiper-slide-active {
-  transform: scaleX(1) scaleY(1);
+@include bp(md) {
+  .swiper-slide-active {
+    transform: scaleX(1);
+  }
 }
